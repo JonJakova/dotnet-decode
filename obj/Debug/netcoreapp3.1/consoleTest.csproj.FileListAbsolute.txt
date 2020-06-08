@@ -1,0 +1,13 @@
+C:\Users\Denaldi\Documents\jon\dotnet\consoleTest\bin\Debug\netcoreapp3.1\consoleTest.exe
+C:\Users\Denaldi\Documents\jon\dotnet\consoleTest\bin\Debug\netcoreapp3.1\consoleTest.deps.json
+C:\Users\Denaldi\Documents\jon\dotnet\consoleTest\bin\Debug\netcoreapp3.1\consoleTest.runtimeconfig.json
+C:\Users\Denaldi\Documents\jon\dotnet\consoleTest\bin\Debug\netcoreapp3.1\consoleTest.runtimeconfig.dev.json
+C:\Users\Denaldi\Documents\jon\dotnet\consoleTest\bin\Debug\netcoreapp3.1\consoleTest.dll
+C:\Users\Denaldi\Documents\jon\dotnet\consoleTest\bin\Debug\netcoreapp3.1\consoleTest.pdb
+C:\Users\Denaldi\Documents\jon\dotnet\consoleTest\obj\Debug\netcoreapp3.1\consoleTest.csprojAssemblyReference.cache
+C:\Users\Denaldi\Documents\jon\dotnet\consoleTest\obj\Debug\netcoreapp3.1\consoleTest.AssemblyInfoInputs.cache
+C:\Users\Denaldi\Documents\jon\dotnet\consoleTest\obj\Debug\netcoreapp3.1\consoleTest.AssemblyInfo.cs
+C:\Users\Denaldi\Documents\jon\dotnet\consoleTest\obj\Debug\netcoreapp3.1\consoleTest.csproj.CoreCompileInputs.cache
+C:\Users\Denaldi\Documents\jon\dotnet\consoleTest\obj\Debug\netcoreapp3.1\consoleTest.dll
+C:\Users\Denaldi\Documents\jon\dotnet\consoleTest\obj\Debug\netcoreapp3.1\consoleTest.pdb
+C:\Users\Denaldi\Documents\jon\dotnet\consoleTest\obj\Debug\netcoreapp3.1\consoleTest.genruntimeconfig.cache
