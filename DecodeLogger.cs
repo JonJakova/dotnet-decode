@@ -1,16 +1,14 @@
 using System;
-using System.Diagnostics;
 using System.IO;
-using System.Threading.Tasks;
 
 namespace consoleTest
 {
     class DecodeLogger : ILogger
     {
-
         private StreamWriter writer;
         private StreamReader reader;
         private DateTime currentTime;
+        private string fileName;
 
         public void Log(string log)
         {
@@ -19,9 +17,10 @@ namespace consoleTest
 
         public void Log(string log, string path)
         {
-            if (!File.Exists(FileName(path)))
+            fileName = FileName(path);
+            if (!File.Exists(fileName))
             {
-                WriteLogToNewFile(log, path);
+                WriteLogToNewFile(log, fileName);
             }
             else
             {
@@ -29,21 +28,12 @@ namespace consoleTest
             }
         }
 
-        private void WriteLogToNewFile(string log, string path)
+        private async void WriteLogToNewFile(string log, string path)
         {
-            using (Process configTool = new Process())
-            {
-                configTool.StartInfo.FileName = "consoleTest.exe";
-                configTool.StartInfo.Arguments = "--bar";
-                configTool.StartInfo.Verb = "runas";
-                configTool.Start();
-                configTool.WaitForExit();
             using (writer = new StreamWriter(path))
             {
-                writer.WriteAsync(log);
+                await writer.WriteAsync(log);
             }
-            }
-
         }
 
         private void OverrideLogFile(string log, string path)
@@ -61,7 +51,8 @@ namespace consoleTest
         public string FileName(string path)
         {
             currentTime = DateTime.Now;
-            return path+currentTime.ToString();
+            // System.Console.WriteLine(path+@"\log-"+currentTime.ToString().Replace(@"/", "-").Replace(" ","-")+".txt");
+            return path+@"\log-"+currentTime.ToString().Replace(@"/", "-").Replace(" ","-").Replace(":","-")+".txt";
         }
     }
 }
